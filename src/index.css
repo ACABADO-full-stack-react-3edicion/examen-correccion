@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-principal: #483d8b;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn,
+.btn:hover,
+.btn:focus,
+button.btn.btn-primary:active {
+  background-color: var(--color-principal) !important;
+  border-color: var(--color-principal);
+}
+.cabecera {
+  margin-bottom: 10px;
+}
+.amigos {
+  margin-top: 20px;
+}
+.amigo {
+  background-color: var(--color-principal);
+  border-radius: 15px;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+}
+.amigo .dato {
+  margin-bottom: 10px;
+}
+.amigo .acciones {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.amigo .acciones svg {
+  cursor: pointer;
+}
+.form-control {
+  border-color: var(--color-principal);
 }
